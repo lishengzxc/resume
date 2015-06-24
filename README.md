@@ -1,5 +1,7 @@
 ##李胜的简历
-###基本信息
-**姓名**： 李胜  
-#####[简历](https://github.com/lishengzxc/resume/blob/master/pdf/李胜的简历.pdf)
+####这是我的简历：
+[http://www.lishengcn.cn/resume15-6-24/](http://www.lishengcn.cn/resume15-6-24/)
+####这是我的前端学习心得：
+[https://github.com/lishengzxc/diary/blob/master/fe.md](http://www.lishengcn.cn/resume15-6-24/)
+
 
