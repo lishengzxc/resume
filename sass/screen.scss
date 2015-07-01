@@ -1,0 +1,320 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/reset";
+
+html {
+	font-size: 17px;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+body {
+	padding: 20px;
+}
+
+a {
+	color: #4A90C7;
+	text-decoration: none;
+	&:hover {
+		color: rgb(146, 192, 228);
+	}
+}
+code {
+	font-family: "Courier New";
+	margin: 0 5px;
+}
+
+.blue {
+	background-color: rgb(146, 192, 228);
+}
+
+hr.white {
+	border: 1px solid rgba(255, 255, 255, .5) !important;
+}
+
+.outer-container {
+	margin: 0 auto;
+	width: 960px;
+	cursor: pointer;
+	header {
+		height: 50px;
+		line-height: 50px;
+		border-radius: 6px;
+		background-color: #000;
+		box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
+		h2 {
+			text-align: center;
+			color: #fff;
+		}
+	}
+	main {
+		position: absolute;
+		margin: 15px 0;
+		width: 960px;
+		height: 1400px;
+		border-radius: 6px;
+		box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
+		background-color: rgb(239, 239, 239);
+		aside {
+			float: left;
+			padding: 15px;
+			width: 300px;
+			height: 100%;
+			box-sizing: border-box;
+			border-radius: 6px 0 0 6px;
+			color: #fff;
+			img {
+				display: block;
+				margin: 40px auto 0 auto;
+				width: 165px;
+				height: 165px;
+				border-radius: 50%;
+				border: 2px solid #fff;
+			}
+			hr {
+				border: 1px solid;
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			.contact, .skill {
+				margin-top: 25px;
+				width: 270px;
+
+				h2 {
+					font-size: 20px;
+					height: 25px;
+					line-height: 26px;
+					&::before {
+						display: block;
+						float: left;
+						margin-right: 10px;
+						content: '';
+						width: 25px;
+						height: 25px;
+						background-image: url(../img/brightness.png);
+						background-size: cover;
+					}
+				}
+				ul {
+					margin-top: 15px;
+					li {
+						margin-bottom: 15px;
+						a {
+							color: #ffffff;
+							&:hover {
+								color: #4A90C7;
+							}
+						}
+					}
+				}
+			}
+			.skill {
+				h2 {
+					font-size: 20px;
+					height: 25px;
+					line-height: 26px;
+					&::before {
+						display: block;
+						float: left;
+						margin-right: 10px;
+						content: '';
+						width: 25px;
+						height: 25px;
+						background-image: url(../img/star.png);
+						background-size: cover;
+					}
+				}
+				ul {
+					li::before {
+						display: inline-block;
+						width: 80px;
+						font-family: "Courier New";
+						font-size: 18px;
+					}
+					li.html::before {
+						content: 'HTML：';
+					}
+					li.css::before {
+						content: 'CSS：';
+					}
+					li.js::before {
+						content: 'JavaScript：';
+					}
+					li.php::before {
+						content: 'PHP/Python';
+					}
+					li.db::before {
+						content: 'MySQL/MongoDB';
+					}
+					li {
+						margin-bottom: 20px;
+						span {
+							display: block;
+							width: 270px;
+							height: 18px;
+							margin-top: 5px;
+							span {
+								position: relative;
+								top: 2px;
+								display: inline-block;
+								background-color: #fff;
+								border-radius: 6px;
+								margin-right: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.inner-container {
+			float: right;
+			height: 100%;
+			width: 660px;
+			box-sizing: border-box;
+			padding: 50px 0 20px 20px;
+			h2 {
+				float: right;
+				text-align: right;
+				padding: 20px;
+				font-size: 24px;
+				color: #fff;
+				border-radius: 16px 0 0 16px;
+				margin-bottom: 20px;
+			}
+			section {
+				clear: both;
+				margin-bottom: 45px;
+			}
+			section.summary, section.teach, section.skill, section.experience {
+				h3 {
+					font-size: 22px;
+					display: inline-block;
+					padding: 10px;
+					border-bottom: 1px solid #3fbee2;
+				}
+				p {
+					padding: 10px 20px 10px 10px;
+					text-indent: 2em;
+					line-height: 1.7;
+				}
+			}
+
+			section.teach {
+				h3 {
+					line-height: 25px;
+				}
+				h3:before {
+					content: '';
+					margin-top: -2px;
+					float: left;
+					display: block;
+					height: 25px;
+					width: 25px;
+					background-image: url(../img/ribbon.png);
+					background-size: contain;
+					margin-right: 10px;
+				}
+				div {
+					margin-top: 15px;
+					margin-left: 40px;
+					margin-bottom: 15px;
+					overflow: hidden;
+					span {
+						float: left;
+						width: 25%;
+					}
+				}
+			}
+
+			section.skill {
+				h3 {
+					line-height: 25px;
+				}
+				h3:before {
+					content: '';
+					margin-top: -2px;
+					float: left;
+					display: block;
+					height: 25px;
+					width: 25px;
+					background-image: url(../img/volume.png);
+					background-size: contain;
+					margin-right: 10px;
+				}
+				p {
+					margin-bottom: -10px;
+				}
+			}
+			section.experience {
+				h3 {
+					line-height: 25px;
+				}
+				h3:before {
+					content: '';
+					margin-top: -2px;
+					float: left;
+					display: block;
+					height: 25px;
+					width: 25px;
+					background-image: url(../img/tools.png);
+					background-size: contain;
+					margin-right: 10px;
+				}
+				div {
+					margin: 15px;
+					h4 {
+						font-size: 20px;
+					}
+					p {
+						margin-bottom: -10px;
+						text-indent: 0;
+						margin-left: 40px;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+#page1 {
+	-webkit-transform: rotateY(0deg);
+	-webkit-transform-origin: 50% 0%;
+	-webkit-transition: 1s;
+	transform: rotateY(0deg);
+	transform-origin: 50% 0%;
+	transition: 1s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	&.back {
+		-webkit-transform: rotateY(180deg);
+		-webkit-transform-origin: 50% 0%;
+		-webkit-transition: 1s;
+		transform: rotateY(180deg);
+		transform-origin: 50% 0%;
+		transition: 1s;
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+	}
+}
+#page2 {
+	-webkit-transform: rotateY(180deg);
+	-webkit-transform-origin: 50% 0%;
+	-webkit-transition: 1s;
+	transform: rotateY(180deg);
+	transform-origin: 50% 0%;
+	transition: 1s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	&.back {
+		-webkit-transform: rotateY(0deg);
+		-webkit-transform-origin: 50% 0%;
+		-webkit-transition: 1s;
+		transform: rotateY(0deg);
+		transform-origin: 50% 0%;
+		transition: 1s;
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+	}
+}

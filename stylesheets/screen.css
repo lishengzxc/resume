@@ -1,0 +1,423 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/screen.scss */
+html {
+  font-size: 17px;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  padding: 20px;
+}
+
+/* line 16, ../sass/screen.scss */
+a {
+  color: #4A90C7;
+  text-decoration: none;
+}
+/* line 19, ../sass/screen.scss */
+a:hover {
+  color: #92c0e4;
+}
+
+/* line 23, ../sass/screen.scss */
+code {
+  font-family: "Courier New";
+  margin: 0 5px;
+}
+
+/* line 28, ../sass/screen.scss */
+.blue {
+  background-color: #92c0e4;
+}
+
+/* line 32, ../sass/screen.scss */
+hr.white {
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+/* line 36, ../sass/screen.scss */
+.outer-container {
+  margin: 0 auto;
+  width: 960px;
+  cursor: pointer;
+}
+/* line 40, ../sass/screen.scss */
+.outer-container header {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 6px;
+  background-color: #000;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+/* line 46, ../sass/screen.scss */
+.outer-container header h2 {
+  text-align: center;
+  color: #fff;
+}
+/* line 51, ../sass/screen.scss */
+.outer-container main {
+  position: absolute;
+  margin: 15px 0;
+  width: 960px;
+  height: 1400px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+  background-color: #efefef;
+}
+/* line 59, ../sass/screen.scss */
+.outer-container main aside {
+  float: left;
+  padding: 15px;
+  width: 300px;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 6px 0 0 6px;
+  color: #fff;
+}
+/* line 67, ../sass/screen.scss */
+.outer-container main aside img {
+  display: block;
+  margin: 40px auto 0 auto;
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+/* line 75, ../sass/screen.scss */
+.outer-container main aside hr {
+  border: 1px solid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 80, ../sass/screen.scss */
+.outer-container main aside .contact, .outer-container main aside .skill {
+  margin-top: 25px;
+  width: 270px;
+}
+/* line 84, ../sass/screen.scss */
+.outer-container main aside .contact h2, .outer-container main aside .skill h2 {
+  font-size: 20px;
+  height: 25px;
+  line-height: 26px;
+}
+/* line 88, ../sass/screen.scss */
+.outer-container main aside .contact h2::before, .outer-container main aside .skill h2::before {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/brightness.png);
+  background-size: cover;
+}
+/* line 99, ../sass/screen.scss */
+.outer-container main aside .contact ul, .outer-container main aside .skill ul {
+  margin-top: 15px;
+}
+/* line 101, ../sass/screen.scss */
+.outer-container main aside .contact ul li, .outer-container main aside .skill ul li {
+  margin-bottom: 15px;
+}
+/* line 103, ../sass/screen.scss */
+.outer-container main aside .contact ul li a, .outer-container main aside .skill ul li a {
+  color: #ffffff;
+}
+/* line 105, ../sass/screen.scss */
+.outer-container main aside .contact ul li a:hover, .outer-container main aside .skill ul li a:hover {
+  color: #4A90C7;
+}
+/* line 113, ../sass/screen.scss */
+.outer-container main aside .skill h2 {
+  font-size: 20px;
+  height: 25px;
+  line-height: 26px;
+}
+/* line 117, ../sass/screen.scss */
+.outer-container main aside .skill h2::before {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/star.png);
+  background-size: cover;
+}
+/* line 129, ../sass/screen.scss */
+.outer-container main aside .skill ul li::before {
+  display: inline-block;
+  width: 80px;
+  font-family: "Courier New";
+  font-size: 18px;
+}
+/* line 135, ../sass/screen.scss */
+.outer-container main aside .skill ul li.html::before {
+  content: 'HTML：';
+}
+/* line 138, ../sass/screen.scss */
+.outer-container main aside .skill ul li.css::before {
+  content: 'CSS：';
+}
+/* line 141, ../sass/screen.scss */
+.outer-container main aside .skill ul li.js::before {
+  content: 'JavaScript：';
+}
+/* line 144, ../sass/screen.scss */
+.outer-container main aside .skill ul li.php::before {
+  content: 'PHP/Python';
+}
+/* line 147, ../sass/screen.scss */
+.outer-container main aside .skill ul li.db::before {
+  content: 'MySQL/MongoDB';
+}
+/* line 150, ../sass/screen.scss */
+.outer-container main aside .skill ul li {
+  margin-bottom: 20px;
+}
+/* line 152, ../sass/screen.scss */
+.outer-container main aside .skill ul li span {
+  display: block;
+  width: 270px;
+  height: 18px;
+  margin-top: 5px;
+}
+/* line 157, ../sass/screen.scss */
+.outer-container main aside .skill ul li span span {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+/* line 170, ../sass/screen.scss */
+.outer-container main .inner-container {
+  float: right;
+  height: 100%;
+  width: 660px;
+  box-sizing: border-box;
+  padding: 50px 0 20px 20px;
+}
+/* line 176, ../sass/screen.scss */
+.outer-container main .inner-container h2 {
+  float: right;
+  text-align: right;
+  padding: 20px;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 16px 0 0 16px;
+  margin-bottom: 20px;
+}
+/* line 185, ../sass/screen.scss */
+.outer-container main .inner-container section {
+  clear: both;
+  margin-bottom: 45px;
+}
+/* line 190, ../sass/screen.scss */
+.outer-container main .inner-container section.summary h3, .outer-container main .inner-container section.teach h3, .outer-container main .inner-container section.skill h3, .outer-container main .inner-container section.experience h3 {
+  font-size: 22px;
+  display: inline-block;
+  padding: 10px;
+  border-bottom: 1px solid #3fbee2;
+}
+/* line 196, ../sass/screen.scss */
+.outer-container main .inner-container section.summary p, .outer-container main .inner-container section.teach p, .outer-container main .inner-container section.skill p, .outer-container main .inner-container section.experience p {
+  padding: 10px 20px 10px 10px;
+  text-indent: 2em;
+  line-height: 1.7;
+}
+/* line 204, ../sass/screen.scss */
+.outer-container main .inner-container section.teach h3 {
+  line-height: 25px;
+}
+/* line 207, ../sass/screen.scss */
+.outer-container main .inner-container section.teach h3:before {
+  content: '';
+  margin-top: -2px;
+  float: left;
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url(../img/ribbon.png);
+  background-size: contain;
+  margin-right: 10px;
+}
+/* line 218, ../sass/screen.scss */
+.outer-container main .inner-container section.teach div {
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+/* line 223, ../sass/screen.scss */
+.outer-container main .inner-container section.teach div span {
+  float: left;
+  width: 25%;
+}
+/* line 231, ../sass/screen.scss */
+.outer-container main .inner-container section.skill h3 {
+  line-height: 25px;
+}
+/* line 234, ../sass/screen.scss */
+.outer-container main .inner-container section.skill h3:before {
+  content: '';
+  margin-top: -2px;
+  float: left;
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url(../img/volume.png);
+  background-size: contain;
+  margin-right: 10px;
+}
+/* line 245, ../sass/screen.scss */
+.outer-container main .inner-container section.skill p {
+  margin-bottom: -10px;
+}
+/* line 250, ../sass/screen.scss */
+.outer-container main .inner-container section.experience h3 {
+  line-height: 25px;
+}
+/* line 253, ../sass/screen.scss */
+.outer-container main .inner-container section.experience h3:before {
+  content: '';
+  margin-top: -2px;
+  float: left;
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url(../img/tools.png);
+  background-size: contain;
+  margin-right: 10px;
+}
+/* line 264, ../sass/screen.scss */
+.outer-container main .inner-container section.experience div {
+  margin: 15px;
+}
+/* line 266, ../sass/screen.scss */
+.outer-container main .inner-container section.experience div h4 {
+  font-size: 20px;
+}
+/* line 269, ../sass/screen.scss */
+.outer-container main .inner-container section.experience div p {
+  margin-bottom: -10px;
+  text-indent: 0;
+  margin-left: 40px;
+}
+
+/* line 281, ../sass/screen.scss */
+#page1 {
+  -webkit-transform: rotateY(0deg);
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: 1s;
+  transform: rotateY(0deg);
+  transform-origin: 50% 0%;
+  transition: 1s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+/* line 290, ../sass/screen.scss */
+#page1.back {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: 1s;
+  transform: rotateY(180deg);
+  transform-origin: 50% 0%;
+  transition: 1s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 301, ../sass/screen.scss */
+#page2 {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: 1s;
+  transform: rotateY(180deg);
+  transform-origin: 50% 0%;
+  transition: 1s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+/* line 310, ../sass/screen.scss */
+#page2.back {
+  -webkit-transform: rotateY(0deg);
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: 1s;
+  transform: rotateY(0deg);
+  transform-origin: 50% 0%;
+  transition: 1s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
