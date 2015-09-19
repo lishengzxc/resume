@@ -5,8 +5,7 @@
 @import "compass/reset";
 
 html {
-	font-size: 17px;
-	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+	font: 17px "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -16,6 +15,7 @@ body {
 a {
 	color: #4A90C7;
 	text-decoration: none;
+	font-family: "Courier New";
 	&:hover {
 		color: rgb(146, 192, 228);
 	}
@@ -64,13 +64,16 @@ hr.white {
 			box-sizing: border-box;
 			border-radius: 6px 0 0 6px;
 			color: #fff;
-			img {
+			.avatar {
 				display: block;
 				margin: 40px auto 0 auto;
 				width: 165px;
 				height: 165px;
 				border-radius: 50%;
 				border: 2px solid #fff;
+				background-size: cover;
+				background-position: center;
+				background-image: url(../img/avatar.gif);
 			}
 			hr {
 				border: 1px solid;
@@ -184,9 +187,9 @@ hr.white {
 			}
 			section {
 				clear: both;
-				margin-bottom: 45px;
+				margin-bottom: 30px;
 			}
-			section.summary, section.teach, section.skill, section.experience {
+			section.summary, section.teach, section.skill, section.experience, section.work {
 				h3 {
 					font-size: 22px;
 					display: inline-block;
@@ -212,6 +215,36 @@ hr.white {
 					height: 25px;
 					width: 25px;
 					background-image: url(../img/ribbon.png);
+					background-size: contain;
+					margin-right: 10px;
+				}
+				div {
+					margin-top: 15px;
+					margin-left: 40px;
+					margin-bottom: 15px;
+					overflow: hidden;
+					span {
+						float: left;
+						width: 25%;
+					}
+				}
+			}
+
+			section.work {
+				h3 {
+					line-height: 25px;
+				}
+				.xy {
+					width: 45%;
+				}
+				h3:before {
+					content: '';
+					margin-top: -2px;
+					float: left;
+					display: block;
+					height: 25px;
+					width: 25px;
+					background-image: url(../img/cruise.png);
 					background-size: contain;
 					margin-right: 10px;
 				}

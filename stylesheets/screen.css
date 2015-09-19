@@ -70,19 +70,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 7, ../sass/screen.scss */
 html {
-  font-size: 17px;
-  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  font: 17px "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 body {
   padding: 20px;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 a {
   color: #4A90C7;
   text-decoration: none;
+  font-family: "Courier New";
 }
 /* line 19, ../sass/screen.scss */
 a:hover {
@@ -145,32 +145,35 @@ hr.white {
   color: #fff;
 }
 /* line 67, ../sass/screen.scss */
-.outer-container main aside img {
+.outer-container main aside .avatar {
   display: block;
   margin: 40px auto 0 auto;
   width: 165px;
   height: 165px;
   border-radius: 50%;
   border: 2px solid #fff;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/avatar.gif);
 }
-/* line 75, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .outer-container main aside hr {
   border: 1px solid;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 80, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .outer-container main aside .contact, .outer-container main aside .skill {
   margin-top: 25px;
   width: 270px;
 }
-/* line 84, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .outer-container main aside .contact h2, .outer-container main aside .skill h2 {
   font-size: 20px;
   height: 25px;
   line-height: 26px;
 }
-/* line 88, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .outer-container main aside .contact h2::before, .outer-container main aside .skill h2::before {
   display: block;
   float: left;
@@ -181,29 +184,29 @@ hr.white {
   background-image: url(../img/brightness.png);
   background-size: cover;
 }
-/* line 99, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .outer-container main aside .contact ul, .outer-container main aside .skill ul {
   margin-top: 15px;
 }
-/* line 101, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .outer-container main aside .contact ul li, .outer-container main aside .skill ul li {
   margin-bottom: 15px;
 }
-/* line 103, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .outer-container main aside .contact ul li a, .outer-container main aside .skill ul li a {
   color: #ffffff;
 }
-/* line 105, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .outer-container main aside .contact ul li a:hover, .outer-container main aside .skill ul li a:hover {
   color: #4A90C7;
 }
-/* line 113, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .outer-container main aside .skill h2 {
   font-size: 20px;
   height: 25px;
   line-height: 26px;
 }
-/* line 117, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .outer-container main aside .skill h2::before {
   display: block;
   float: left;
@@ -214,45 +217,45 @@ hr.white {
   background-image: url(../img/star.png);
   background-size: cover;
 }
-/* line 129, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .outer-container main aside .skill ul li::before {
   display: inline-block;
   width: 80px;
   font-family: "Courier New";
   font-size: 18px;
 }
-/* line 135, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .outer-container main aside .skill ul li.html::before {
   content: 'HTML：';
 }
-/* line 138, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .outer-container main aside .skill ul li.css::before {
   content: 'CSS：';
 }
-/* line 141, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .outer-container main aside .skill ul li.js::before {
   content: 'JavaScript：';
 }
-/* line 144, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .outer-container main aside .skill ul li.php::before {
   content: 'PHP/Python';
 }
-/* line 147, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .outer-container main aside .skill ul li.db::before {
   content: 'MySQL/MongoDB';
 }
-/* line 150, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .outer-container main aside .skill ul li {
   margin-bottom: 20px;
 }
-/* line 152, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .outer-container main aside .skill ul li span {
   display: block;
   width: 270px;
   height: 18px;
   margin-top: 5px;
 }
-/* line 157, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .outer-container main aside .skill ul li span span {
   position: relative;
   top: 2px;
@@ -261,7 +264,7 @@ hr.white {
   border-radius: 6px;
   margin-right: 5px;
 }
-/* line 170, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .outer-container main .inner-container {
   float: right;
   height: 100%;
@@ -269,7 +272,7 @@ hr.white {
   box-sizing: border-box;
   padding: 50px 0 20px 20px;
 }
-/* line 176, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .outer-container main .inner-container h2 {
   float: right;
   text-align: right;
@@ -279,29 +282,29 @@ hr.white {
   border-radius: 16px 0 0 16px;
   margin-bottom: 20px;
 }
-/* line 185, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .outer-container main .inner-container section {
   clear: both;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
-/* line 190, ../sass/screen.scss */
-.outer-container main .inner-container section.summary h3, .outer-container main .inner-container section.teach h3, .outer-container main .inner-container section.skill h3, .outer-container main .inner-container section.experience h3 {
+/* line 193, ../sass/screen.scss */
+.outer-container main .inner-container section.summary h3, .outer-container main .inner-container section.teach h3, .outer-container main .inner-container section.skill h3, .outer-container main .inner-container section.experience h3, .outer-container main .inner-container section.work h3 {
   font-size: 22px;
   display: inline-block;
   padding: 10px;
   border-bottom: 1px solid #3fbee2;
 }
-/* line 196, ../sass/screen.scss */
-.outer-container main .inner-container section.summary p, .outer-container main .inner-container section.teach p, .outer-container main .inner-container section.skill p, .outer-container main .inner-container section.experience p {
+/* line 199, ../sass/screen.scss */
+.outer-container main .inner-container section.summary p, .outer-container main .inner-container section.teach p, .outer-container main .inner-container section.skill p, .outer-container main .inner-container section.experience p, .outer-container main .inner-container section.work p {
   padding: 10px 20px 10px 10px;
   text-indent: 2em;
   line-height: 1.7;
 }
-/* line 204, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .outer-container main .inner-container section.teach h3 {
   line-height: 25px;
 }
-/* line 207, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .outer-container main .inner-container section.teach h3:before {
   content: '';
   margin-top: -2px;
@@ -313,23 +316,55 @@ hr.white {
   background-size: contain;
   margin-right: 10px;
 }
-/* line 218, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .outer-container main .inner-container section.teach div {
   margin-top: 15px;
   margin-left: 40px;
   margin-bottom: 15px;
   overflow: hidden;
 }
-/* line 223, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .outer-container main .inner-container section.teach div span {
   float: left;
   width: 25%;
 }
-/* line 231, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
+.outer-container main .inner-container section.work h3 {
+  line-height: 25px;
+}
+/* line 237, ../sass/screen.scss */
+.outer-container main .inner-container section.work .xy {
+  width: 45%;
+}
+/* line 240, ../sass/screen.scss */
+.outer-container main .inner-container section.work h3:before {
+  content: '';
+  margin-top: -2px;
+  float: left;
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url(../img/cruise.png);
+  background-size: contain;
+  margin-right: 10px;
+}
+/* line 251, ../sass/screen.scss */
+.outer-container main .inner-container section.work div {
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+/* line 256, ../sass/screen.scss */
+.outer-container main .inner-container section.work div span {
+  float: left;
+  width: 25%;
+}
+/* line 264, ../sass/screen.scss */
 .outer-container main .inner-container section.skill h3 {
   line-height: 25px;
 }
-/* line 234, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .outer-container main .inner-container section.skill h3:before {
   content: '';
   margin-top: -2px;
@@ -341,15 +376,15 @@ hr.white {
   background-size: contain;
   margin-right: 10px;
 }
-/* line 245, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .outer-container main .inner-container section.skill p {
   margin-bottom: -10px;
 }
-/* line 250, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .outer-container main .inner-container section.experience h3 {
   line-height: 25px;
 }
-/* line 253, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .outer-container main .inner-container section.experience h3:before {
   content: '';
   margin-top: -2px;
@@ -361,22 +396,22 @@ hr.white {
   background-size: contain;
   margin-right: 10px;
 }
-/* line 264, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .outer-container main .inner-container section.experience div {
   margin: 15px;
 }
-/* line 266, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .outer-container main .inner-container section.experience div h4 {
   font-size: 20px;
 }
-/* line 269, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .outer-container main .inner-container section.experience div p {
   margin-bottom: -10px;
   text-indent: 0;
   margin-left: 40px;
 }
 
-/* line 281, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 #page1 {
   -webkit-transform: rotateY(0deg);
   -webkit-transform-origin: 50% 0%;
@@ -387,7 +422,7 @@ hr.white {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-/* line 290, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 #page1.back {
   -webkit-transform: rotateY(180deg);
   -webkit-transform-origin: 50% 0%;
@@ -399,7 +434,7 @@ hr.white {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 301, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 #page2 {
   -webkit-transform: rotateY(180deg);
   -webkit-transform-origin: 50% 0%;
@@ -410,7 +445,7 @@ hr.white {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-/* line 310, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #page2.back {
   -webkit-transform: rotateY(0deg);
   -webkit-transform-origin: 50% 0%;
