@@ -4,4 +4,5 @@
 ####这是我的前端学习心得：
 [https://github.com/lishengzxc/diary/blob/master/fe.md](https://github.com/lishengzxc/diary/blob/master/fe.md)
 
+<img src="http://lishengzxc.github.io/resume/img/avatar.gif"/>
 
